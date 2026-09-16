@@ -84,7 +84,9 @@ Single source of truth. Shared build rules + pre-launch checklist.
 
 ### Motion
 
-- CSS first for hover, focus, and simple transitions (`transition`, `@keyframes`).
+Recipes: [MOTION.md](MOTION.md) (one file per pattern in [`motion/`](motion/)).
+
+- CSS first for hover, focus, simple transitions, and sticky/stacking scroll effects (`transition`, `@keyframes`, `position: sticky`).
 - No JS for motion unless CSS can't do it (timeline, scroll-driven, sequenced, interruptible).
 - When JS is needed: [GSAP](https://gsap.com/docs/v3/). Use clear easing (e.g. `power2.out`, `power3.inOut`); avoid linear unless intentional.
 - Prefer `autoAlpha` over `opacity` (also toggles `visibility`).
