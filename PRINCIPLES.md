@@ -71,7 +71,7 @@ Single source of truth. Shared build rules + pre-launch checklist.
 ### CSS / Tailwind
 
 - Utility-first ([Tailwind](https://tailwindcss.com/docs)). Custom CSS only when utilities can't.
-- Colors via design tokens / CSS vars (e.g. `--color-*`). No raw hex in components.
+- Colors via design tokens / CSS vars (e.g. `--color-*`). No raw hex in components. Never invent or approximate colors: use only defined brand values, copied exactly. A lookalike hex (`#1A1A1A` vs `#111111`) is off-brand. If a needed color is missing from the palette, ask — do not invent a close shade.
 - Spacing via scale / tokens; no magic numbers.
 - Typography via project `text-*` / type scale. No ad-hoc font sizes.
 - Fonts: load once (e.g. `@font-face`); use designated font utilities only.
